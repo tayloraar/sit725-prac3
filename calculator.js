@@ -15,15 +15,6 @@ var adder=function(num1,num2){
     return result;
 }
 
-app.get('/adder', function(reqAdd,resAdd){
-    log('Adder Request Made')
-    var num1 = parseInt(reqAdd.query.num1);
-    var num2 = parseInt(reqAdd.query.num2);
-    var result = adder(num1,num2);
-    resAdd.send(`${result}`);
-})
-
-var port = 3000;
+var port = 4000;
 app.listen(port);
 log(`server listening on: ${port}`);
-//test

@@ -7,7 +7,7 @@ $(document).ready(function(){
             num1:number1,
             num2:number2
         }
-        $.get( "/adder", numbers ,function( data ) {
+        $.get( "http://localhost:4000/adder", numbers ,function( data ) {
             $( "#result" ).val( data );
         });
     })
